@@ -1,0 +1,38 @@
+/*
+ Theme Name: Test theme
+ Author: Kripanath Aditya
+ Description: Test theme to test Wordpress Functionalities
+ Version: 1.0
+*/
+
+body{
+    background-color: bisque;
+}
+
+
+/* ------------- Menu ---------------- */
+
+#menu-header-menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8f5902;
+  padding: 14px 16px;
+}
+
+#menu-header-menu li{
+	display: inline;
+	
+}
+
+#menu-header-menu li a{
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	padding: 0px 16px;	
+}
+
+#menu-header-menu li a:hover{
+	background-color: #e9b96e;
+}
