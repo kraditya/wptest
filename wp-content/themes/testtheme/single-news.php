@@ -12,6 +12,8 @@ get_header();
 
 <h2>single-news.php</h2>
 
+
+
 <!-- Show the contents -->
 
 <?php 
@@ -26,7 +28,14 @@ get_header();
 
         <?php 
         
-        the_content();        
+        the_content(); 
+        
+        $locations = get_field('locations');
+
+        echo'<h4>Location info </h4>'.$locations[0]->post_title;
+        echo $locations[0]->post_content;
+
+        // var_dump($locations);
 
         echo "<br/>";
 
@@ -39,6 +48,7 @@ get_header();
 
 <?php
 
+echo'</br></br>';
 
 /* ------------------------------- Options ------------------------------ */
 $color = get_field('choose_your_color');
